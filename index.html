@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8"> 
+    <title>WWW组织官网</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0f141e;
+            color: #ffffff;
+            position: relative;
+            background-image: url('5.jpg'); /* 设置背景图片 */
+            background-size: cover; /* 使背景图片覆盖整个屏幕 */
+            background-position: center; /* 将背景图片居中 */
+            background-repeat: no-repeat; /* 防止背景图片重复 */
+        }
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 1; /* 确保容器在按钮之下 */
+        }
+        h1 {
+            color: #ffeb3b; /* 更改标题颜色 */
+        }
+        p {
+            line-height: 1.6;
+            color: yellow; /* 更改段落文字颜色为黄色 */
+        }
+        .button-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 0px; /* 最小化间距 */
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: rgba(27, 30, 36, 0.7); /* 半透明背景色以便文字可见 */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            min-width: 90px; /* 设置最小宽度 */
+        }
+        .button:hover {
+            background-color: rgba(22, 160, 133, 0.7); /* 悬停时改为半透明绿色 */
+        }
+        .directory-button {
+            width: 70px; /* 设置较短的宽度 */
+        }
+        .short-button {
+            width: 70px; /* 设置宽度以容纳大约5个字 */
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="logo-button button" onclick="window.location.href='https://space.bilibili.com/3493105953147298?spm_id_from=333.1007.0.0'">wusuoT</button>
+        <button class="mcatri-button button" onclick="alert('MCATRI Button Clicked')">MCATRI</button>
+        <button class="figuredzx-button button" onclick="window.location.href='https://space.bilibili.com/646933348?spm_id_from=333.788.0.0'">figuredzx</button>
+    </div>
+    <div class="container">
+        <h1>WWW组织官网导航页</h1>
+        <p>欢迎访问WWW组织官方网站</p>
+        <p>组织其他官方网站：</p>
+        <p><button class="button short-button" onclick="window.location.href='/mlb/index.html'">目录表</button></p>
+        <p>组织代理官方网站：</p>
+        <p><button class="button" onclick="window.location.href='/mc/index.html'">亚托莉的1.21.1的生存服官网</button></p>
+    </div>
+</body>
+</html>
